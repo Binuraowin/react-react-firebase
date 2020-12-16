@@ -1,10 +1,15 @@
+import {BrowserRouter} from "react-router-dom";
+import Navbar from "./component/layout/Navbar";
 
 
 function App() {
   return (
-    <div className="App">
-      <h1>Binura owin </h1>
-    </div>
+      <BrowserRouter>
+          <div className="App">
+          <Navbar/>
+          </div>
+      </BrowserRouter>
+
   );
 }
 
