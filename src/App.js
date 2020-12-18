@@ -6,6 +6,8 @@ import Route from "react-router-dom/es/Route";
 import ProjectDetails from "./component/projects/ProjectDetails";
 import './css/materialize.css'
 import SignIn from "./component/auth/SignIn";
+import SignUp from "./component/auth/SignUp";
+import CreateProject from "./component/projects/CreateProject";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
               <Route exact path={'/'} component={Dashboard}/>
               <Route path={'/project/:id'} component={ProjectDetails}/>
               <Route path={'/signin'} component={SignIn}/>
+              <Route path={'/signup'} component={SignUp}/>
+              <Route path={'/create'} component={CreateProject}/>
           </Switch>
           </div>
       </BrowserRouter>
