@@ -3,6 +3,9 @@ import Navbar from "./component/layout/Navbar";
 import Switch from "react-router-dom/es/Switch";
 import Dashboard from "./component/dashboard/Dashboard"
 import Route from "react-router-dom/es/Route";
+import ProjectDetails from "./component/projects/ProjectDetails";
+import './css/materialize.css'
+import SignIn from "./component/auth/SignIn";
 
 
 function App() {
@@ -11,7 +14,9 @@ function App() {
           <div className="App">
           <Navbar/>
           <Switch>
-              <Route path={'/'} component={Dashboard}/>
+              <Route exact path={'/'} component={Dashboard}/>
+              <Route path={'/project/:id'} component={ProjectDetails}/>
+              <Route path={'/signin'} component={SignIn}/>
           </Switch>
           </div>
       </BrowserRouter>
